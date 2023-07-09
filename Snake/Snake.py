@@ -78,7 +78,7 @@ pen.hideturtle()
 def update_score(nscore):
   score = max_score()
 
-  with open("H:\Work\Sneha\Computer Project\Games\Snake\Score.txt", 'w') as f:
+  with open("Games\Snake\Score.txt", 'w') as f:
     if int(nscore) > int(score):
         f.write(str(nscore))
     else:
@@ -86,7 +86,7 @@ def update_score(nscore):
 
 # Returns the max score from the Score.txt file
 def max_score():
-  with open("H:\Work\Sneha\Computer Project\Games\Snake\Score.txt", 'r') as f:
+  with open("Games\Snake\Score.txt", 'r') as f:
     lines = f.readlines()
     score = lines[0].strip()
 
@@ -179,9 +179,9 @@ def die():
 
 def play_sound(occurrence):
   if occurrence == 'dead':
-    winsound.PlaySound("H:\Work\Sneha\Computer Project\Games\Sound Effects\lose.wav", winsound.SND_ASYNC)
+    winsound.PlaySound("Games\Sound Effects\lose.wav", winsound.SND_ASYNC)
   if occurrence == 'score':
-    winsound.PlaySound("H:\Work\Sneha\Computer Project\Games\Sound Effects\win.wav",winsound.SND_ASYNC)
+    winsound.PlaySound("Games\Sound Effects\win.wav",winsound.SND_ASYNC)
 
    
 
