@@ -104,9 +104,9 @@ print_score(single, score_1, score_2)
 
 def play_sound(occurrence):
     if occurrence == 'collision':
-        winsound.PlaySound("H:\Work\Sneha\Computer Project\Games\Sound Effects\impact.wav", winsound.SND_ASYNC)
+        winsound.PlaySound("Games\Sound Effects\impact.wav", winsound.SND_ASYNC)
     if occurrence == 'score':
-        winsound.PlaySound("H:\Work\Sneha\Computer Project\Games\Sound Effects\win.wav",winsound.SND_ASYNC)
+        winsound.PlaySound("Games\Sound Effects\win.wav",winsound.SND_ASYNC)
 
 def check_single():
     global single
