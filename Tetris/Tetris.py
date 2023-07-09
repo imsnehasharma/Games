@@ -291,7 +291,7 @@ def draw_window(surface, grid, score = 0):
 def update_score(nscore):
   score = max_score()
 
-  with open("H:\Work\Sneha\Computer Project\Games\Tetris\Score.txt", 'w') as f:
+  with open("Games\Tetris\Score.txt", 'w') as f:
     if int(nscore) > int(score):
         f.write(str(nscore))
     else:
@@ -299,7 +299,7 @@ def update_score(nscore):
 
 # Returns the max score from the Score.txt file
 def max_score():
-  with open("H:\Work\Sneha\Computer Project\Games\Tetris\Score.txt", 'r') as f:
+  with open("Games\Tetris\Score.txt", 'r') as f:
     lines = f.readlines()
     score = lines[0].strip()
 
